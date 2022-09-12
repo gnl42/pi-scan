@@ -4,6 +4,7 @@
 on_chroot << EOF
 # Disable default user password
 echo -n "${FIRST_USER_NAME:='pi'}:" > /boot/userconf.txt
+passwd -d ${FIRST_USER_NAME:='pi'}
 
 # Disable swap
 dphys-swapfile swapoff

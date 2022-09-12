@@ -1,5 +1,5 @@
 IMG_NAME='pi-scan'
-RELEASE='stretch'
+RELEASE='bullseye'
 LOCALE_DEFAULT='en_US.UTF-8'
 KEYBOARD_LAYOUT='English (US)'
 KEYBOARD_KEYMAP='us'

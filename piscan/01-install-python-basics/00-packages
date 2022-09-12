@@ -19,5 +19,5 @@ libdbus-glib-1-dev
 liblcms2-2
 libopenjp2-7
 libwebpmux3
-#libjpeg9-dev
+libjpeg9-dev
 #libjpeg62-turbo-dev
