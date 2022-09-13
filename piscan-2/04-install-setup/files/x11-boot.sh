@@ -7,4 +7,8 @@ xset s off -dpms
 feh --bg-scale splash.png
 
 # TODO start Python app
-sleep 3600
+sleep 3
+while true; do
+  cd /home/pi/pi-scan
+  python main.py
+done;
