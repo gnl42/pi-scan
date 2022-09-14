@@ -7,3 +7,5 @@ feh
 gnome-themes-standard
 xdotool
 vim
+libreadline-dev
+libreadline8

@@ -22,5 +22,5 @@ cat <<EOT >> /home/${FIRST_USER_NAME:='pi'}/.profile
 #fi
 
 # Start Pi Scan
-~/run-pi-scan.sh
+~/pi-scan/run-pi-scan.sh
 EOT
