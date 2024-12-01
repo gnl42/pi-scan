@@ -2,10 +2,17 @@ xorg
 x11-xserver-utils
 xserver-xorg-video-fbdev
 xserver-xorg-video-fbturbo
+python3-pip
+cmake
 fonts-noto-color-emoji
 feh
+git
 gnome-themes-standard
 xdotool
 vim
+libdbus-1-dev
+libglib2.0-dev
+liblua5.2-dev
 libreadline-dev
 libreadline8
+libusb-dev
