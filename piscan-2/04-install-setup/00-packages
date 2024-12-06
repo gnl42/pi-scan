@@ -10,9 +10,28 @@ git
 gnome-themes-standard
 xdotool
 vim
-libdbus-1-dev
 libglib2.0-dev
+liblua5.2
+liblua5.2-0
 liblua5.2-dev
+udisks2
 libreadline-dev
 libreadline8
 libusb-dev
+libopenjp2-7
+libpangoft2-1.0-0
+libgphoto2-6
+gphoto2
+python3-six
+python3-dbus
+libdbus-1-dev
+libdbus-glib-1-dev
+python3-numpy
+dbus
+python3-resolvelib
+python3-olefile
+python3-kivy
+libsdl2-dev libsdl2-image-dev libsdl2-mixer-dev libsdl2-ttf-dev libgl1-mesa-dev libgles2-mesa-dev
+libgstreamer1.0-dev  gstreamer1.0-plugins-bad gstreamer1.0-plugins-base gstreamer1.0-plugins-good gstreamer1.0-plugins-ugly
+gstreamer1.0-omx gstreamer1.0-alsa libmtdev1 libmtdev-dev
+
