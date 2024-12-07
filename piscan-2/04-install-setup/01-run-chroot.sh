@@ -38,6 +38,14 @@ cd lupa
 python3 setup.py install bdist_wheel --no-bundle --with-cython
 cd ..
 
+# libgphoto package isn't current so build it
+git clone https://github.com/gphoto/libgphoto2.git
+cd libgphoto2
+autoreconf -is
+./configure --libdir=/lib/arm-linux-gnueabihf
+make clean install
+cd ..
+
 # chdkptp.py
 git clone --depth 1 https://github.com/5up3rD4n1/chdkptp.py
 cd chdkptp.py

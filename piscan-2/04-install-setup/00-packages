@@ -30,8 +30,22 @@ python3-numpy
 dbus
 python3-resolvelib
 python3-olefile
-python3-kivy
 libsdl2-dev libsdl2-image-dev libsdl2-mixer-dev libsdl2-ttf-dev libgl1-mesa-dev libgles2-mesa-dev
 libgstreamer1.0-dev  gstreamer1.0-plugins-bad gstreamer1.0-plugins-base gstreamer1.0-plugins-good gstreamer1.0-plugins-ugly
 gstreamer1.0-omx gstreamer1.0-alsa libmtdev1 libmtdev-dev
-
+libsdl2-dev
+libsdl2-image-dev
+libsdl2-mixer-dev
+libsdl2-ttf-dev
+libsdl2-2.0-0
+libsdl2-ttf-2.0-0
+libsdl2-image-2.0-0
+libsdl2-mixer-2.0-0
+libgl1-mesa-dev
+libx11-xcb1
+libxkbcommon0
+libxxf86vm1
+libxrender1
+libglx0
+libtool libpopt-dev libexif-dev libjpeg-dev autoconf autopoint libcdk5-dev autoconf autopoint make libgd-dev libusb-dev libxml2-dev  libc
+url4 libcurl4-openssl-dev  libltdl-dev
