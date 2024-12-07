@@ -15,7 +15,9 @@ pip install wiringpi==2.60.1
 #pip install -U pysdl2
 #pip install pangoft2
 pip install olefile
-pip install kivy
+
+pip install -I Cython
+pip install kivy[full]==2.2.0
 
 mkdir -p /home/pi/pi-scan
 
@@ -28,7 +30,6 @@ sudo cp -r /tmp/pi-scan/resources/spinner.gif /home/pi/pi-scan/
 mkdir -p /home/pi/.kivy
 
 cd /home/pi
-pip install -I Cython
 
 #pip install lupa --install-option='--no-luajit'
 # --install-option was removed from pip with 23.0.1 so do it manually
@@ -44,7 +45,7 @@ git submodule init
 git submodule update
 python setup.py install
 #
-#chown -R pi:pi /home/pi
+chown -R pi:pi /home/pi
 cd /home/pi/pi-scan
 gphoto2 --version || true
 python3 main.py || true
