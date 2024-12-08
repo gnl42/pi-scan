@@ -39,6 +39,7 @@ git clone --depth 1 --recursive --branch lupa-2.2 https://github.com/scoder/lupa
 cd lupa
 python3 setup.py install bdist_wheel --no-bundle --with-cython
 cd ..
+rm -fr lupa
 
 # libgphoto2 package isn't current so build it
 git clone https://github.com/gphoto/libgphoto2.git
@@ -48,6 +49,7 @@ autoreconf -is
 make install
 make clean
 cd ..
+rm -fr libgphoto2
 
 # chdkptp.py
 git clone --depth 1 https://github.com/5up3rD4n1/chdkptp.py
@@ -56,10 +58,8 @@ git submodule init
 git submodule update
 python setup.py install
 #
-
-# Speed up writes to the SD card (good for ssh option)
-# /boot/firmware/config.txt doesn't exist so leave it here as a reminder
-#echo "dtparam=sd_overclock=100" | sudo cat >> /boot/firmware/config.txt
+cd ..
+rm -fr chdkptp
 
 chown -R pi:pi /home/pi
 cd /home/pi/pi-scan
