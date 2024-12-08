@@ -1,3 +1,4 @@
+locales-all
 xorg
 x11-xserver-utils
 xserver-xorg-video-fbdev
@@ -47,5 +48,4 @@ libxkbcommon0
 libxxf86vm1
 libxrender1
 libglx0
-libtool libpopt-dev libexif-dev libjpeg-dev autoconf autopoint libcdk5-dev autoconf autopoint make libgd-dev libusb-dev libxml2-dev  libc
-url4 libcurl4-openssl-dev  libltdl-dev
+libtool libpopt-dev libexif-dev libjpeg-dev autoconf autopoint libcdk5-dev autoconf autopoint make libgd-dev libusb-dev libxml2-dev  libcurl4 libcurl4-openssl-dev  libltdl-dev

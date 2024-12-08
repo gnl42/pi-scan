@@ -21,6 +21,7 @@ pip install kivy[full]==2.2.0
 
 mkdir -p /home/pi/pi-scan
 
+
 # TODO when this gets moved into pi-scan repo this should be replaced
 git clone --depth 1 https://github.com/gnl42/pi-scan-tenrec /tmp/pi-scan
 sudo cp -r /tmp/pi-scan/src/*                 /home/pi/pi-scan/
@@ -28,6 +29,7 @@ sudo cp -r /tmp/pi-scan/resources/spinner.gif /home/pi/pi-scan/
 
 # For Touch Screen
 mkdir -p /home/pi/.kivy
+sudo cp /tmp/pi-scan/config/touch.ini /home/pi/.kivy/config.ini
 
 cd /home/pi
 
@@ -38,12 +40,13 @@ cd lupa
 python3 setup.py install bdist_wheel --no-bundle --with-cython
 cd ..
 
-# libgphoto package isn't current so build it
+# libgphoto2 package isn't current so build it
 git clone https://github.com/gphoto/libgphoto2.git
 cd libgphoto2
 autoreconf -is
 ./configure --libdir=/lib/arm-linux-gnueabihf
-make clean install
+make install
+make clean
 cd ..
 
 # chdkptp.py
@@ -53,6 +56,11 @@ git submodule init
 git submodule update
 python setup.py install
 #
+
+# Speed up writes to the SD card (good for ssh option)
+# /boot/firmware/config.txt doesn't exist so leave it here as a reminder
+#echo "dtparam=sd_overclock=100" | sudo cat >> /boot/firmware/config.txt
+
 chown -R pi:pi /home/pi
 cd /home/pi/pi-scan
 gphoto2 --version || true
