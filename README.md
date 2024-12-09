@@ -9,10 +9,7 @@ $ sudo ./build.sh
 When complete, turn off rebuilds of the intermediate stages:
 
 ```
-$ touch stage{0,1,2}/SKIP
-$ touch piscan/SKIP
-$ touch stage2/SKIP_IMAGES
-$ touch piscan/SKIP_IMAGES
+touch stage{0,1,2}/SKIP piscan/SKIP stage2/SKIP_IMAGES piscan/SKIP_IMAGES
 ```
 
 Then we can iterate on rebuilding the last stage (`piscan-2`) quickly with:
