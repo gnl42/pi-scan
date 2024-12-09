@@ -29,7 +29,6 @@ sudo cp -r /tmp/pi-scan/resources/spinner.gif /home/pi/pi-scan/
 
 # For Touch Screen
 mkdir -p /home/pi/.kivy
-sudo cp /tmp/pi-scan/config/touch.ini /home/pi/.kivy/config.ini
 
 cd /home/pi
 
